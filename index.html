@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-white">
     <header>
         <!--Navbar section start-->
         <div class="navbar bg-base-100 display-flex justify-center">
@@ -46,7 +46,7 @@
     </header>
     <main>
         <!--Banner Section-->
-        <div class="banner  bg-[url('images/banner.png')] w-auto lg:w-full h-screen bg-no-repeat bg-center display-flex text-center items-center align-middle">
+        <div class="banner  bg-[url('images/banner.png')] w-auto lg:w-full h-screen  bg-no-repeat bg-center display-flex text-center items-center align-middle">
          <div class="pt-28">
             <p class="text-white text-4xl font-extrabold pt-28">End-to-End Travel with </p>
             <p class="text-[#1DD100] text-4xl font-extrabold">P Paribahan</p>
@@ -86,8 +86,8 @@
                 <p class="text-black text-4xl font-extrabold pt-28 text-center">P.H Paribahan</p>
                 <p class="text-center">P.H Paribahan is one of the most wellkown bus service in bangladesh. </p>
               </div>
-              <div class="text-2 flex w-4/5 mx-auto bg-white mt-10 divide-x divide-dashed ">
-                <div class="part-1 w-2/3">
+              <div class="text-2  lg:flex lg:w-4/5 mx-auto bg-white mt-10 divide-x divide-dashed ">
+                <div class="part-1 lg:w-2/3">
                   <div class="part-1-of-part-1 flex justify-between mx-2 mt-3">
                     <div class="flex">
                       <p><img src="images/bus-icon.png"></p>
@@ -124,20 +124,135 @@
                   </div>
                 </div>
                 <div class="part-2 mt-5 flex flex-col justify-center lg:pl-20">
-                  <p>
+                  <p class="self-center">
                     <img src="images/fare.png">
                   </p>
-                  <p class="text-black text-xl font-extrabold">500 Taka</p>
-                  <p>Per Seat</p>
+                  <p class="text-black text-xl font-extrabold text-center">500 Taka</p>
+                  <p class="text-center">Per Seat</p>
                 </div>
               </div>
             </div>
-            <div class="seat"></div>
+            <div class="seat text-2 lg:flex lg-w-4/5 mx-10 bg-white mt-10 divide-x divide-dashed ">
+              <div class="seat-part-1 lg:w-3/5">
+                <div class="seat-p-1of-p-1 divide-y divide-dashed">
+                  <p class="font-extrabold text-xl">Select your seat</p>
+                  <div class="flex justify-between">
+                    <p class="flex"><img src="images/seat-gray.png">
+                      Available seat</p>
+                      <p class="flex"><img src="images/seat-green.png">
+                        Selected</p>
+                      </div>
+                </div>
+                <!--seat design start-->
+                <div class="seat-layout mt-10">
+                  <body class="bg-gray-200 p-8">
 
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="grid grid-cols-2 gap-4 mr-3">
+                            <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">A1</div>
+                            <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">A2</div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 ml-3">
+                            <div class="bg-slate-400 text-black rounded-lg p-4 text-center font-bold hover:bg-[#1DD100]">A3</div>
+                            <div class="bg-slate-400 text-black rounded-lg p-4 text-center font-bold hover:bg-[#1DD100]">A4</div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mr-3">
+                            <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">B1</div>
+                            <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">B2</div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 ml-3">
+                            <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">B3</div>
+                            <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">B4</div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mr-3">
+                          <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">C1</div>
+                          <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">C2</div>
+                      </div>
+                      <div class="grid grid-cols-2 gap-4 ml-3">
+                          <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">C3</div>
+                          <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">C4</div>
+                      </div>
+                      <div class="grid grid-cols-2 gap-4 mr-3">
+                        <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">D1</div>
+                        <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">D2</div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 ml-3">
+                        <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">D3</div>
+                        <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">D4</div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 mr-3">
+                      <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">F1</div>
+                      <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">F2</div>
+                  </div>
+                  <div class="grid grid-cols-2 gap-4 ml-3">
+                      <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">F3</div>
+                      <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">F4</div>
+                  </div>
+                    </div>
+                
+                </body>
+                
+                </div>
+              </div>
+              <div class="part-2 lg:w-2/5">
+                <div class="p-2-1">
+                  <p class="font-extrabold text-xl text-center">Selet your seat</p>
+                </div>
+                <div class="p-2-2 bg-slate-100 divide-y divide-dashed">
+                  <div class="p-2-2-1 flex justify-between mt-5 mx-2">
+                    <p>Seat-<span class="bg-[#1DD100] text-white">0</span></p>
+                    <p>Class</p>
+                    <p>Prize</p>
+                  </div>
+                  <div class="list">
+                    <ul>
+                    </ul>
+                  </div>
+                  <div class="prize flex justify-between mx2">
+                    <p>Totall prize</p>
+                    <p class="ml-11">BDT 0</p>
+                  </div>
+                  <div class="coupon">
+                    <label class="input flex items-center gap-2 mt-2 mx-2">
+                      <input type="text" class="grow" placeholder="Have ypu any coupon" />
+                      <button class="btn bg-[#1DD100] btn-disabled">Apply</button>
+                    </label>
+                  </div>
+                  <div class="grand-total flex justify-between mx-2">
+                    <p>
+                      Grand-total
+                    </p>
+                    <p>BDT 0</p>
+                  </div>
+                </div>
+                <div class="input-info bg-white mt-5 mx-2">
+                  <p class="text-lg font-extrabold">Passenger name*</p>
+                  <input type="text" placeholder="Enter your name" class="input input-bordered w-full max-w-xs" />
+                  <p class="text-lg font-extrabold">Phone Number*</p>
+                  <input type="number" placeholder="Enter your phone Number" class="input input-bordered w-full max-w-xs" />
+                  <p class="text-lg font-extrabold">Email id</p>
+                  <input type="text" placeholder="Enter your email id" class="input input-bordered w-full max-w-xs" />
+                  <button class="btn btn-block bg-[#1DD100] text-white mt-3">Next</button>
+                </div>
+                <!--terms and condition-->
+                <div class="t-a-c flex mx-4 justify-between mt-2">
+                  <p class="underline decoration-solid">Terms and Conditions</p>
+                  <p class="underline decoration-solid">Cancellation Policy</p>
+                </div>
+              
+   
+              </div>
+            </div>
+        </div>
 
         </div>
 
     </main>
+   
     
 </body>
+
+
+
+
 </html>
