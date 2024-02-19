@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="C:\Projects\Bus-Ticket\style1.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="busTIcket.js"></script>
 </head>
 <body class="bg-white">
     <header>
@@ -95,7 +96,7 @@
                     </div>
                     <div class="w-1/6 bg-lime-100 text-[#1DD100] text-sm flex rounded-lg">
                       <p><img src="images/seat-green.png"></p>
-                      <p class="text-sm">40 Seats left</p>  
+                      <p class="text-sm"><span class="remain-seats">20</span> Seats left</p>  
                     </div>
                   </div>
                   <div class="part-2-of-part-1  justify-between mx-2 bg-[#F7F8F8] rounded-lg mt-5 divide-y divide-dashed">
@@ -127,7 +128,7 @@
                   <p class="self-center">
                     <img src="images/fare.png">
                   </p>
-                  <p class="text-black text-xl font-extrabold text-center">500 Taka</p>
+                  <p class="text-black text-xl font-extrabold text-center">550 Taka</p>
                   <p class="text-center">Per Seat</p>
                 </div>
               </div>
@@ -145,48 +146,48 @@
                 </div>
                 <!--seat design start-->
                 <div class="seat-layout mt-10">
-                  <body class="bg-gray-200 p-8">
+                  <body  class=" bg-gray-200 p-8">
 
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="grid grid-cols-2 gap-4 mr-3">
-                            <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">A1</div>
-                            <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">A2</div>
+                    <div id="seat-Design" class="grid grid-cols-2 gap-4">
+                        <div class="side grid grid-cols-2 gap-4 mr-3">
+                            <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">A1</div>
+                            <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">A2</div>
                         </div>
-                        <div class="grid grid-cols-2 gap-4 ml-3">
-                            <div class="bg-slate-400 text-black rounded-lg p-4 text-center font-bold hover:bg-[#1DD100]">A3</div>
-                            <div class="bg-slate-400 text-black rounded-lg p-4 text-center font-bold hover:bg-[#1DD100]">A4</div>
+                        <div class="side grid grid-cols-2 gap-4 ml-3">
+                            <div class="seat bg-slate-400 text-black rounded-lg p-4 text-center font-bold hover:bg-[#1DD100]">A3</div>
+                            <div class="seat bg-slate-400 text-black rounded-lg p-4 text-center font-bold hover:bg-[#1DD100]">A4</div>
                         </div>
-                        <div class="grid grid-cols-2 gap-4 mr-3">
-                            <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">B1</div>
-                            <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">B2</div>
+                        <div class="side grid grid-cols-2 gap-4 mr-3">
+                            <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">B1</div>
+                            <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">B2</div>
                         </div>
-                        <div class="grid grid-cols-2 gap-4 ml-3">
-                            <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">B3</div>
-                            <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">B4</div>
+                        <div class="side grid grid-cols-2 gap-4 ml-3">
+                            <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">B3</div>
+                            <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">B4</div>
                         </div>
-                        <div class="grid grid-cols-2 gap-4 mr-3">
-                          <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">C1</div>
-                          <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">C2</div>
+                        <div class="side grid grid-cols-2 gap-4 mr-3">
+                          <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">C1</div>
+                          <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">C2</div>
                       </div>
-                      <div class="grid grid-cols-2 gap-4 ml-3">
-                          <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">C3</div>
-                          <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">C4</div>
+                      <div class="side grid grid-cols-2 gap-4 ml-3">
+                          <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">C3</div>
+                          <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">C4</div>
                       </div>
-                      <div class="grid grid-cols-2 gap-4 mr-3">
-                        <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">D1</div>
-                        <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">D2</div>
+                      <div class="side grid grid-cols-2 gap-4 mr-3">
+                        <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">D1</div>
+                        <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">D2</div>
                     </div>
-                    <div class="grid grid-cols-2 gap-4 ml-3">
-                        <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">D3</div>
-                        <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">D4</div>
+                    <div class="side grid grid-cols-2 gap-4 ml-3">
+                        <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">D3</div>
+                        <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">D4</div>
                     </div>
-                    <div class="grid grid-cols-2 gap-4 mr-3">
-                      <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">F1</div>
-                      <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">F2</div>
+                    <div class="side grid grid-cols-2 gap-4 mr-3">
+                      <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">F1</div>
+                      <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">F2</div>
                   </div>
-                  <div class="grid grid-cols-2 gap-4 ml-3">
-                      <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">F3</div>
-                      <div class="bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">F4</div>
+                  <div class="side grid grid-cols-2 gap-4 ml-3">
+                      <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">F3</div>
+                      <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">F4</div>
                   </div>
                     </div>
                 
@@ -200,7 +201,7 @@
                 </div>
                 <div class="p-2-2 bg-slate-100 divide-y divide-dashed">
                   <div class="p-2-2-1 flex justify-between mt-5 mx-2">
-                    <p>Seat-<span class="bg-[#1DD100] text-white">0</span></p>
+                    <p>Seat-<span class="selected-seats bg-[#1DD100] text-white">0</span></p>
                     <p>Class</p>
                     <p>Prize</p>
                   </div>
@@ -210,7 +211,7 @@
                   </div>
                   <div class="prize flex justify-between mx2">
                     <p>Totall prize</p>
-                    <p class="ml-11">BDT 0</p>
+                    <p class="ml-11">BDT <span class="totall-prize">0</span></p>
                   </div>
                   <div class="coupon">
                     <label class="input flex items-center gap-2 mt-2 mx-2">
@@ -222,7 +223,7 @@
                     <p>
                       Grand-total
                     </p>
-                    <p>BDT 0</p>
+                    <p>BDT <span class="Grand-prize">0</span></p>
                   </div>
                 </div>
                 <div class="input-info bg-white mt-5 mx-2">
@@ -248,8 +249,6 @@
         </div>
 
     </main>
-   
-    
 </body>
 
 
