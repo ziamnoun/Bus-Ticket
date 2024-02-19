@@ -182,12 +182,12 @@
                         <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">D4</div>
                     </div>
                     <div class="side grid grid-cols-2 gap-4 mr-3">
-                      <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">F1</div>
-                      <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">F2</div>
+                      <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">E1</div>
+                      <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">E2</div>
                   </div>
                   <div class="side grid grid-cols-2 gap-4 ml-3">
-                      <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">F3</div>
-                      <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">F4</div>
+                      <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">E3</div>
+                      <div class="seat bg-slate-400 text-black rounded-lg p-4  text-center font-bold hover:bg-[#1DD100]">E4</div>
                   </div>
                     </div>
                 
@@ -214,9 +214,9 @@
                     <p class="ml-11">BDT <span class="totall-prize">0</span></p>
                   </div>
                   <div class="coupon">
-                    <label class="input flex items-center gap-2 mt-2 mx-2">
+                    <label class="input flex items-center gap-2 mt-2 mx-2" >
                       <input type="text" class="grow" placeholder="Have ypu any coupon" />
-                      <button class="btn bg-[#1DD100] btn-disabled">Apply</button>
+                      <button disabled id="applyButton" class="btn bg-[#1DD100]">Apply</button>
                     </label>
                   </div>
                   <div class="grand-total flex justify-between mx-2">
@@ -230,10 +230,10 @@
                   <p class="text-lg font-extrabold">Passenger name*</p>
                   <input type="text" placeholder="Enter your name" class="input input-bordered w-full max-w-xs" />
                   <p class="text-lg font-extrabold">Phone Number*</p>
-                  <input type="number" placeholder="Enter your phone Number" class="input input-bordered w-full max-w-xs" />
+                  <input autocomplete="off" id="phoneNumber" type="number" placeholder="Enter your phone Number" class="input input-bordered w-full max-w-xs" />
                   <p class="text-lg font-extrabold">Email id</p>
                   <input type="text" placeholder="Enter your email id" class="input input-bordered w-full max-w-xs" />
-                  <button class="btn btn-block bg-[#1DD100] text-white mt-3">Next</button>
+                  <button disabled id="nextButton" class="btn btn-block bg-[#1DD100] text-white mt-3">Next</button>
                 </div>
                 <!--terms and condition-->
                 <div class="t-a-c flex mx-4 justify-between mt-2">
